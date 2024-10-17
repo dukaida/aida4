@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.header {
+    background-color: lightgray; /* Fondo del encabezado */
+    height: 100px;               /* Altura del encabezado */
+    display: flex;               /* Usamos flexbox para centrar el contenido */
+    justify-content: center;     /* Centramos horizontalmente */
+    align-items: center;         /* Centramos verticalmente */
+    margin-bottom: 20px;         /* Espacio entre el encabezado y el contenido */
+}
+
+.header h1 {
+    font-size: 24px;             /* Tamaño del título */
+    color: darkslategray;        /* Color del texto del título */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Espacio entre el aside y los div */
+}
+
+.aside {
+    width: 20%;                  /* El aside ocupa el 20% del ancho de la página */
+    background-color: lightblue;  /* Color de fondo del aside */
+    padding: 20px;
+    height: 830px;               /* Suma de las dos filas de 400px + 30px de márgenes */
+    margin-right: 20px;          /* Espacio a la derecha del aside */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;             /* Permite que los div hagan wrap */
+    justify-content: space-between;
+    width: 75%;                  /* El contenido ocupa el 75% del ancho de la página */
+}
+
+.box {
+    width: 48%;                  /* Cada caja ocupa el 48% del contenedor, dejando espacio para el margen */
+    height: 400px;               /* Altura de cada caja */
+    margin-bottom: 20px;         /* Espacio entre las filas de cajas */
+    display: flex;
+    justify-content: center;     /* Centra el contenido horizontalmente */
+    align-items: center;         /* Centra el contenido verticalmente */
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;          /* Bordes redondeados */
+}
+
+.box1 {
+    background-color: tomato;    /* Color de fondo de la caja 1 */
+}
+
+.box2 {
+    background-color: gold;      /* Color de fondo de la caja 2 */
+}
+
+.box3 {
+    background-color: forestgreen; /* Color de fondo de la caja 3 */
+}
+
+.box4 {
+    background-color: purple;    /* Color de fondo de la caja 4 */
+}
